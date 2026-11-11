@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Оформление заказа — Burger Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/order.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="../index.html">
+        <span class="logo__icon" aria-hidden="true">
+          <span class="logo__bun-top"></span>
+          <span class="logo__lettuce"></span>
+          <span class="logo__patty"></span>
+          <span class="logo__bun-bottom"></span>
+        </span>
+        <span class="logo__text">Burger<span>Lab</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="burger-btn" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Главная</a></li>
+          <li><a class="nav__link" href="menu.html">Меню</a></li>
+          <li><a class="nav__link" href="about.html">О нас</a></li>
+          <li><a class="nav__link is-active" href="order.html">Заказ</a></li>
+        </ul>
+        <a class="btn btn--accent nav__cta" href="order.html">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="crumbs" aria-label="Хлебные крошки">
+          <a href="../index.html">Главная</a> <span>/</span> <span>Заказ</span>
+        </nav>
+        <h1>Оформление заказа</h1>
+        <p class="lead">
+          Выберите бургер, добавьте напиток и укажите, куда привезти.
+          Среднее время доставки — 25 минут.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <form class="order" action="#" method="post">
+
+          <fieldset class="order__block">
+            <legend class="order__legend">
+              <span class="order__step">1</span> Выберите бургер
+            </legend>
+
+            <div class="picks">
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="classic" checked>
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Классик" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Классик</span>
+                  <span class="pick__desc">Говядина, чеддер, огурец</span>
+                  <span class="pick__price">390 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="texas">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Дымный Техас" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Дымный Техас</span>
+                  <span class="pick__desc">Двойная котлета, бекон</span>
+                  <span class="pick__price">540 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="green">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Зелёный сад" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Зелёный сад</span>
+                  <span class="pick__desc">Нут, авокадо, тахини</span>
+                  <span class="pick__price">420 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="chicken">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Чикен Кранч" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Чикен Кранч</span>
+                  <span class="pick__desc">Курица, айсберг, йогурт</span>
+                  <span class="pick__price">360 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="blue">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Блю Чиз" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Блю Чиз</span>
+                  <span class="pick__desc">Дорблю, руккола, лук</span>
+                  <span class="pick__price">490 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="truffle">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Трюфельный" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Трюфельный</span>
+                  <span class="pick__desc">Мраморная говядина</span>
+                  <span class="pick__price">620 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="fire">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Файр Хот" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Файр Хот</span>
+                  <span class="pick__desc">Курица, халапеньо</span>
+                  <span class="pick__price">430 ₽</span>
+                </span>
+              </label>
+
+              <label class="pick">
+                <input class="pick__input" type="radio" name="burger" value="fresh">
+                <span class="pick__media">
+                  <img src="../img/hit-classic.jpg" alt="Фреш Гарден" loading="lazy">
+                </span>
+                <span class="pick__body">
+                  <span class="pick__name">Фреш Гарден</span>
+                  <span class="pick__desc">Грибы, перец, базилик</span>
+                  <span class="pick__price">410 ₽</span>
+                </span>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="order__block">
+            <legend class="order__legend">
+              <span class="order__step">2</span> Напиток
+            </legend>
+            <div class="segmented">
+              <label class="segmented__item"><input type="radio" name="drink" value="none" checked><span>Без
+                  напитка</span></label>
+              <label class="segmented__item"><input type="radio" name="drink" value="lemonade"><span>Лимонад · 190
+                  ₽</span></label>
+              <label class="segmented__item"><input type="radio" name="drink" value="cola"><span>Кола · 150
+                  ₽</span></label>
+              <label class="segmented__item"><input type="radio" name="drink" value="coffee"><span>Кофе · 180
+                  ₽</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="order__block">
+            <legend class="order__legend">
+              <span class="order__step">3</span> Способ получения
+            </legend>
+            <div class="segmented">
+              <label class="segmented__item"><input type="radio" name="delivery" value="pickup"
+                  checked><span>Самовывоз</span></label>
+              <label class="segmented__item"><input type="radio" name="delivery" value="courier"><span>Курьер · 25
+                  мин</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="order__block">
+            <legend class="order__legend">
+              <span class="order__step">4</span> Контактные данные
+            </legend>
+
+            <div class="field-row">
+              <div class="field">
+                <label class="field__label" for="o-name">Имя</label>
+                <input class="input" id="o-name" type="text" name="name" placeholder="Иван" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="o-phone">Телефон</label>
+                <input class="input" id="o-phone" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="field">
+                <label class="field__label" for="o-email">Email</label>
+                <input class="input" id="o-email" type="email" name="email" placeholder="you@mail.ru">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="o-address">Адрес доставки</label>
+              <input class="input" id="o-address" type="text" name="address" placeholder="Улица, дом, квартира">
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="o-comment">Комментарий</label>
+              <textarea class="input" id="o-comment" name="comment" rows="3"
+                placeholder="Позвонить за 10 минут, код домофона 1234"></textarea>
+            </div>
+
+            <label class="agree">
+              <input type="checkbox" name="agree" required>
+              <span>Согласен с условиями обработки персональных данных</span>
+            </label>
+          </fieldset>
+
+          <div class="order__summary">
+            <div>
+              <span class="summary__label">К оплате</span>
+              <strong class="summary__total">390 ₽</strong>
+            </div>
+            <button class="btn btn--accent" type="submit">Оформить заказ</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="../index.html">
+            <span class="logo__icon" aria-hidden="true">
+              <span class="logo__bun-top"></span>
+              <span class="logo__lettuce"></span>
+              <span class="logo__patty"></span>
+              <span class="logo__bun-bottom"></span>
+            </span>
+            <span class="logo__text">Burger<span>Lab</span></span>
+          </a>
+          <p class="footer__about">Бургерная на 24 посадочных места. Готовим на открытом огне с 2018 года.</p>
+        </div>
+        <div>
+          <h3 class="footer__title">Меню</h3>
+          <ul class="footer__list">
+            <li><a href="menu.html">Все бургеры</a></li>
+            <li><a href="order.html">Заказ и доставка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hi@burgerlab.ru">hi@burgerlab.ru</a></li>
+            <li>Москва, ул. Грильная, 14</li>
+            <li>Ежедневно 11:00 — 23:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Рассылка</h3>
+          <p class="footer__about" style="margin-top:0">Раз в неделю присылаем новый рецепт и промокод.</p>
+          <form class="footer__form" action="#" method="post">
+            <label class="visually-hidden" for="footer-email">Email</label>
+            <input id="footer-email" type="email" name="email" placeholder="you@mail.ru" required>
+            <button type="submit">ОК</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Burger Lab. Все права защищены.</span>
+        <span>Сделано на курсе «Вёрстка и серверное программирование»</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

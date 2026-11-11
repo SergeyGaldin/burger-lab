@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burger Lab — бургерная нового формата</title>
+  <meta name="description" content="Burger Lab — сочные бургеры на гриле, свежая булочка и локальные продукты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/pages/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="index.html">
+        <span class="logo__icon" aria-hidden="true">
+          <span class="logo__bun-top"></span>
+          <span class="logo__lettuce"></span>
+          <span class="logo__patty"></span>
+          <span class="logo__bun-bottom"></span>
+        </span>
+        <span class="logo__text">Burger<span>Lab</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="burger-btn" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li>
+            <a class="nav__link is-active" href="index.html">Главная</a>
+          </li>
+          <li><a class="nav__link" href="pages/menu.html">Меню</a></li>
+          <li><a class="nav__link" href="pages/about.html">О нас</a></li>
+          <li><a class="nav__link" href="pages/order.html">Заказ</a></li>
+        </ul>
+        <a class="btn btn--accent nav__cta" href="pages/order.html">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (без изображения, центрированный) -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">Гриль • Смокер • Крафт</span>
+        <h1>Бургеры, которые пахнут дымом</h1>
+        <p class="lead hero__lead">
+          Мы печём булочки каждое утро, рубим котлеты из охлаждённой лопатки и
+          коптим бекон на вишнёвой щепе. Никакой заморозки и никаких
+          «секретных соусов из пакета».
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--accent" href="pages/menu.html">Смотреть меню</a>
+          <a class="btn btn--ghost" href="pages/about.html">О нашей кухне</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>12</strong><span>авторских бургеров</span></li>
+          <li><strong>25 мин</strong><span>средняя доставка</span></li>
+          <li><strong>4.9</strong><span>рейтинг на картах</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Почему мы</span>
+            <h2>Три вещи, которые мы не экономим</h2>
+          </div>
+          <p class="lead">
+            Кухня открыта — любой гость видит, как собирается его заказ.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="feature">
+            <div class="feature__num">01</div>
+            <h3>Мясо, а не «мясной продукт»</h3>
+            <p class="card__text">
+              Котлета — 180 г охлаждённой лопатки, рубленной вручную. Жирность
+              20%, поэтому бургер остаётся сочным до последнего укуса.
+            </p>
+          </article>
+          <article class="feature">
+            <div class="feature__num">02</div>
+            <h3>Хлеб из своей пекарни</h3>
+            <p class="card__text">
+              Бриошь на картофельном тесте: 12 часов холодной ферментации,
+              кунжут и сливочная корочка. Партия печётся каждые три часа.
+            </p>
+          </article>
+          <article class="feature">
+            <div class="feature__num">03</div>
+            <h3>Соусы с нуля</h3>
+            <p class="card__text">
+              Майонез варим сами, кетчуп томатируем из узбекских сливовидных
+              томатов, а чипотле в ADOBO настаивается неделю.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ХИТЫ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="eyebrow">Хиты</span>
+            <h2>Выбор постоянных гостей</h2>
+          </div>
+          <a class="btn btn--ghost" href="pages/menu.html">Всё меню →</a>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__media">
+              <span class="badge">Хит</span>
+              <img loading="lazy" src="img/hit-classic.jpg" alt="Бургер Классик с говяжьей котлетой" width="700"
+                height="525" />
+            </div>
+            <div class="card__body">
+              <span class="tag">Говядина</span>
+              <h3>Классик</h3>
+              <p class="card__text">
+                Котлета 180 г, чеддер, маринованный огурец, лук, дом. кетчуп.
+              </p>
+              <div class="card__foot">
+                <span class="price">390 ₽</span>
+                <a class="btn btn--accent">Подробнее</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="img/hit-classic.jpg" alt="Бургер Дымный Техас с двумя котлетами и беконом"
+                width="700" height="525" />
+            </div>
+            <div class="card__body">
+              <span class="tag tag--dark">Острое</span>
+              <h3>Дымный Техас</h3>
+              <p class="card__text">
+                Двойная котлета, копчёный бекон, соус чипотле, жареный лук.
+              </p>
+              <div class="card__foot">
+                <span class="price">540 ₽</span>
+                <a class="btn btn--accent">Подробнее</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="badge">Veg</span>
+              <img loading="lazy" src="img/hit-classic.jpg" alt="Вегетарианский бургер с авокадо" width="700"
+                height="525" />
+            </div>
+            <div class="card__body">
+              <span class="tag tag--green">Веган</span>
+              <h3>Зелёный сад</h3>
+              <p class="card__text">
+                Котлета из нута и шпината, авокадо, томат, соус тахини.
+              </p>
+              <div class="card__foot">
+                <span class="price">420 ₽</span>
+                <a class="btn btn--accent">Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОМО -->
+    <section class="promo">
+      <div class="container promo__inner">
+        <div>
+          <span class="eyebrow">Каждый вторник</span>
+          <h2>Два бургера по цене одного</h2>
+          <p>
+            С 12:00 до 17:00 на всё основное меню. Промокод не нужен — просто
+            скажите «вторник» на кассе.
+          </p>
+        </div>
+        <a class="btn btn--accent" href="pages/order.html">Оформить заказ</a>
+      </div>
+    </section>
+
+    <!-- О ПРОЦЕССЕ -->
+    <section class="section">
+      <div class="container split">
+        <figure class="split__media">
+          <img loading="lazy" src="img/hit-classic.jpg" alt="Повар собирает бургер на открытой кухне" width="900"
+            height="700" />
+        </figure>
+        <div class="split__text">
+          <span class="eyebrow">Как это работает</span>
+          <h2>От помола до подачи — 9 минут</h2>
+          <p>
+            Утром команда принимает мясо, проверяет температуру и рубит его
+            под котлеты. Параллельно в пекарне выпекается бриошь, а на плите
+            томится луковый мармелад.
+          </p>
+          <p>
+            Когда заказ попадает на кухню, котлета отправляется на чугунную
+            плиту: 2 минуты с одной стороны, 90 секунд с другой, минута
+            «отдыха» под фольгой — и сборка. Поэтому в зале бургер оказывается
+            горячим, а булочка не успевает размокнуть.
+          </p>
+          <ul class="ticks">
+            <li>Открытая кухня — видно каждое движение</li>
+            <li>Продукты от поставщиков не старше 48 часов</li>
+            <li>Упаковка из переработанного картона</li>
+          </ul>
+          <a class="btn btn--dark" href="pages/about.html">Читать о Burger Lab</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo__icon" aria-hidden="true">
+              <span class="logo__bun-top"></span>
+              <span class="logo__lettuce"></span>
+              <span class="logo__patty"></span>
+              <span class="logo__bun-bottom"></span>
+            </span>
+            <span class="logo__text">Burger<span>Lab</span></span>
+          </a>
+          <p class="footer__about">
+            Бургерная на 24 посадочных места. Готовим на открытом огне с 2018
+            года.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__title">Меню</h3>
+          <ul class="footer__list">
+            <li><a href="pages/menu.html">Все бургеры</a></li>
+            <li><a href="pages/order.html">Заказ и доставка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hi@burgerlab.ru">hi@burgerlab.ru</a></li>
+            <li>Москва, ул. Грильная, 14</li>
+            <li>Ежедневно 11:00 — 23:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Рассылка</h3>
+          <p class="footer__about" style="margin-top: 0">
+            Раз в неделю присылаем новый рецепт и промокод.
+          </p>
+          <form class="footer__form" action="#" method="post">
+            <label class="visually-hidden" for="footer-email">Email</label>
+            <input id="footer-email" type="email" name="email" placeholder="you@mail.ru" required />
+            <button type="submit">ОК</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Burger Lab. Все права защищены.</span>
+        <span>Сделано на курсе «Вёрстка и серверное программирование»</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

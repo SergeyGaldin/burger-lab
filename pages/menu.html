@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — Burger Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/menu.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="../index.html">
+        <span class="logo__icon" aria-hidden="true">
+          <span class="logo__bun-top"></span>
+          <span class="logo__lettuce"></span>
+          <span class="logo__patty"></span>
+          <span class="logo__bun-bottom"></span>
+        </span>
+        <span class="logo__text">Burger<span>Lab</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="burger-btn" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Главная</a></li>
+          <li><a class="nav__link is-active" href="menu.html">Меню</a></li>
+          <li><a class="nav__link" href="about.html">О нас</a></li>
+          <li><a class="nav__link" href="order.html">Заказ</a></li>
+        </ul>
+        <a class="btn btn--accent nav__cta" href="order.html">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <nav class="crumbs" aria-label="Хлебные крошки">
+          <a href="../index.html">Главная</a> <span>/</span> <span>Меню</span>
+        </nav>
+        <h1>Меню Burger Lab</h1>
+        <p class="lead">
+          Восемь авторских бургеров, домашние соусы и свежая бриошь.
+          Всё готовится после заказа — поэтому мы просим 12–15 минут.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+
+        <ul class="filters">
+          <li><a class="filters__item is-active" href="#">Все</a></li>
+          <li><a class="filters__item" href="#">Говядина</a></li>
+          <li><a class="filters__item" href="#">Курица</a></li>
+          <li><a class="filters__item" href="#">Веган</a></li>
+          <li><a class="filters__item" href="#">Острые</a></li>
+        </ul>
+
+        <div class="grid grid--3">
+
+          <article class="card">
+            <div class="card__media">
+              <span class="badge">Хит</span>
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Классик" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag">Говядина</span>
+              <h3>Классик</h3>
+              <p class="card__text">Котлета 180 г, чеддер, маринованный огурец, лук, домашний кетчуп.</p>
+              <div class="card__foot">
+                <span class="price">390 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Дымный Техас" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag tag--dark">Острое</span>
+              <h3>Дымный Техас</h3>
+              <p class="card__text">Двойная котлета, копчёный бекон, чипотле, жареный лук, бриошь.</p>
+              <div class="card__foot">
+                <span class="price">540 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="badge">Veg</span>
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Веган бургер Зелёный сад" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag tag--green">Веган</span>
+              <h3>Зелёный сад</h3>
+              <p class="card__text">Котлета из нута и шпината, авокадо, томат, соус тахини.</p>
+              <div class="card__foot">
+                <span class="price">420 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Чикен Кранч" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag">Курица</span>
+              <h3>Чикен Кранч</h3>
+              <p class="card__text">Хрустящее филе в панировке, айсберг, соус на йогурте и чесноке.</p>
+              <div class="card__foot">
+                <span class="price">360 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Блю Чиз" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag">Говядина</span>
+              <h3>Блю Чиз</h3>
+              <p class="card__text">Котлета 200 г, дорблю, карамелизированный лук, руккола.</p>
+              <div class="card__foot">
+                <span class="price">490 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <span class="badge">Новинка</span>
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Трюфельный" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag">Говядина</span>
+              <h3>Трюфельный</h3>
+              <p class="card__text">Мраморная говядина, швейцарский сыр, трюфельный майонез.</p>
+              <div class="card__foot">
+                <span class="price">620 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Файр Хот" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag tag--dark">Острое</span>
+              <h3>Файр Хот</h3>
+              <p class="card__text">Курица в остром маринаде, халапеньо, соус шрирача-мед.</p>
+              <div class="card__foot">
+                <span class="price">430 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img loading="lazy" src="../img/hit-classic.jpg" alt="Бургер Фреш Гарден" width="700" height="525">
+            </div>
+            <div class="card__body">
+              <span class="tag tag--green">Веган</span>
+              <h3>Фреш Гарден</h3>
+              <p class="card__text">Грибная котлета, печёный перец, шпинат, соус из базилика.</p>
+              <div class="card__foot">
+                <span class="price">410 ₽</span>
+                <a class="btn btn--accent">Выбрать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="../index.html">
+            <span class="logo__icon" aria-hidden="true">
+              <span class="logo__bun-top"></span>
+              <span class="logo__lettuce"></span>
+              <span class="logo__patty"></span>
+              <span class="logo__bun-bottom"></span>
+            </span>
+            <span class="logo__text">Burger<span>Lab</span></span>
+          </a>
+          <p class="footer__about">Бургерная на 24 посадочных места. Готовим на открытом огне с 2018 года.</p>
+        </div>
+        <div>
+          <h3 class="footer__title">Меню</h3>
+          <ul class="footer__list">
+            <li><a href="menu.html">Все бургеры</a></li>
+            <li><a href="order.html">Заказ и доставка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hi@burgerlab.ru">hi@burgerlab.ru</a></li>
+            <li>Москва, ул. Грильная, 14</li>
+            <li>Ежедневно 11:00 — 23:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Рассылка</h3>
+          <p class="footer__about" style="margin-top:0">Раз в неделю присылаем новый рецепт и промокод.</p>
+          <form class="footer__form" action="#" method="post">
+            <label class="visually-hidden" for="footer-email">Email</label>
+            <input id="footer-email" type="email" name="email" placeholder="you@mail.ru" required>
+            <button type="submit">ОК</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Burger Lab. Все права защищены.</span>
+        <span>Сделано на курсе «Вёрстка и серверное программирование»</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О нас — Burger Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/pages/about.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="../index.html">
+        <span class="logo__icon" aria-hidden="true">
+          <span class="logo__bun-top"></span>
+          <span class="logo__lettuce"></span>
+          <span class="logo__patty"></span>
+          <span class="logo__bun-bottom"></span>
+        </span>
+        <span class="logo__text">Burger<span>Lab</span></span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="burger-btn" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="nav" aria-label="Главное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Главная</a></li>
+          <li><a class="nav__link" href="menu.html">Меню</a></li>
+          <li><a class="nav__link is-active" href="about.html">О нас</a></li>
+          <li><a class="nav__link" href="order.html">Заказ</a></li>
+        </ul>
+        <a class="btn btn--accent nav__cta" href="order.html">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-head">
+      <div class="container">
+        <nav class="crumbs" aria-label="Хлебные крошки">
+          <a href="../index.html">Главная</a> <span>/</span> <span>О нас</span>
+        </nav>
+        <h1>История Burger Lab</h1>
+        <p class="lead">
+          Небольшая бургерная, которая выросла из домашней кухни
+          и одного чугунного гриля на балконе.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container article">
+
+        <figure class="article__figure article__figure--right">
+          <img src="../img/hit-classic.jpg" alt="Повар собирает бургер на открытой кухне" width="800" height="600"
+            loading="lazy">
+          <figcaption>Открытая кухня: гости видят весь процесс сборки.</figcaption>
+        </figure>
+
+        <p>
+          Burger Lab начался в 2018 году с простой идеи: бургер — это не фастфуд,
+          а полноценное блюдо, у которого есть автор, рецепт и сезонность.
+          Основатель проекта, Артём Ковалёв, восемь лет проработал шеф-поваром
+          в европейских бистро и однажды решил, что самое честное и самое
+          демократичное блюдо в мире заслуживает такого же внимания, как
+          стейк или паста. Первые полгода он готовил на домашней кухне:
+          молол мясо ручным мясорубом, пробовал разные пропорции жира,
+          экспериментировал с температурой булочки и вёл блокнот,
+          в котором к концу года накопилось больше трёхсот записей
+          о том, почему один бургер получился лучше другого.
+        </p>
+
+        <p>
+          Первое помещение нашли случайно — бывшая пекарня на углу
+          Грильной улицы с большой витриной и старой кирпичной стеной.
+          Ремонт делали своими силами, сохранив всё, что можно было сохранить:
+          чугунные радиаторы, деревянные полки, лестницу на антресоль.
+          Открытая кухня появилась не из маркетинговых соображений, а потому,
+          что денег на перегородку просто не осталось. Через месяц выяснилось,
+          что именно это и стало главной особенностью места: гости садились
+          у стойки и наблюдали, как собирается их заказ, задавали вопросы
+          про мясо и соусы, а иногда просили попробовать котлету до сборки.
+        </p>
+
+        <figure class="article__figure article__figure--left">
+          <img src="../img/hit-classic.jpg" alt="Классический бургер с котлетой из говядины" width="800" height="600"
+            loading="lazy">
+          <figcaption>«Классик» — первый рецепт, который до сих пор в меню.</figcaption>
+        </figure>
+
+        <p>
+          Меню строилось вокруг одного принципа: каждый ингредиент должен
+          иметь историю. Говядину привозят с фермы в Тульской области,
+          где скот выращивают на травяном откорме без гормонов роста.
+          Бриошь печёт своя пекарня по рецепту, в котором картофельное
+          пюре заменяет часть воды — булочка получается плотной снаружи
+          и мягкой внутри, не размокает за десять минут и хорошо держит
+          форму даже с двойной котлетой. Соусы готовятся партиями каждое
+          утро: майонез на жёлтке и оливковом масле, кетчуп из томатов
+          с базиликом, чипотле в ADOBO, который настаивается неделю,
+          и горчично-медовый дрессинг для куриных бургеров.
+        </p>
+
+        <figure class="article__figure article__figure--right">
+          <img src="../img/hit-classic.jpg" alt="Бургер с сыром дорблю и рукколой" width="800" height="600"
+            loading="lazy">
+          <figcaption>«Блю Чиз» — самый обсуждаемый бургер сезона.</figcaption>
+        </figure>
+
+        <p>
+          Сегодня в меню восемь бургеров, но меняется оно постоянно.
+          Раз в месяц команда собирается на «дегустационный вторник»:
+          шеф приносит три-четыре экспериментальных рецепта, все пробуют
+          и голосуют. Только один из пяти добирается до основной карты —
+          остальные остаются в архиве или возвращаются позже с изменениями.
+          Так появился «Дымный Техас», который сначала казался слишком
+          острым, потом получил три версии соуса и в итоге стал лидером
+          продаж. Так же появился «Зелёный сад» — веганский бургер,
+          который заказывают не только вегетарианцы, но и те, кто просто
+          хочет отдохнуть от мяса.
+        </p>
+
+        <p>
+          Мы сознательно не становимся сетью. Кухня должна оставаться
+          маленькой, чтобы шеф лично пробовал каждую партию соуса,
+          а персонал знал постоянных гостей по именам. Доставка работает
+          только в пределах часа езды от ресторана, потому что бургер
+          не должен ехать через весь город в контейнере. Упаковка —
+          переработанный картон и бумажные пакеты, без пластика.
+          Отработанное масло отправляется на переработку в биодизель,
+          а овощные обрезки — в компост на крыше соседнего дома.
+        </p>
+
+        <figure class="article__figure article__figure--left">
+          <img src="../img/hit-classic.jpg" alt="Бургер с хрустящей куриной котлетой" width="800" height="600"
+            loading="lazy">
+          <figcaption>Курица маринуется в йогурте 12 часов перед панировкой.</figcaption>
+        </figure>
+
+        <p>
+          Отдельная гордость — команда. В зале работают девять человек,
+          на кухне — шесть. Почти все пришли с нуля: кто-то начинал
+          мыть посуду и через год встал на гриль, кто-то приходил
+          на одну смену и остался на три года. Мы платим выше среднего
+          по рынку, закрываем смены не позже полуночи и даём два
+          выходных подряд. Кажется, именно поэтому бургеры получаются
+          стабильными: человек, который устал, не может аккуратно
+          собрать восемь слоёв.
+        </p>
+
+        <p>
+          Если вы дочитали до этого места — приходите. Мы работаем
+          каждый день с одиннадцати утра до одиннадцати вечера,
+          а по вторникам отдаём два бургера по цене одного.
+          Расскажите официанту, что вы прочитали эту страницу, —
+          и получите бесплатный домашний лимонад.
+        </p>
+
+        <div class="gallery">
+          <figure>
+            <img src="../img/hit-classic.jpg" alt="Трюфельный бургер крупным планом" width="600" height="450"
+              loading="lazy">
+            <figcaption>Трюфельный — новинка сезона</figcaption>
+          </figure>
+          <figure>
+            <img src="../img/hit-classic.jpg" alt="Острый бургер с халапеньо" width="600" height="450" loading="lazy">
+            <figcaption>Файр Хот — для любителей острого</figcaption>
+          </figure>
+          <figure>
+            <img src="../img/hit-classic.jpg" alt="Бургер с грибной котлетой" width="600" height="450" loading="lazy">
+            <figcaption>Фреш Гарден — растительная альтернатива</figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo" href="../index.html">
+            <span class="logo__icon" aria-hidden="true">
+              <span class="logo__bun-top"></span>
+              <span class="logo__lettuce"></span>
+              <span class="logo__patty"></span>
+              <span class="logo__bun-bottom"></span>
+            </span>
+            <span class="logo__text">Burger<span>Lab</span></span>
+          </a>
+          <p class="footer__about">Бургерная на 24 посадочных места. Готовим на открытом огне с 2018 года.</p>
+        </div>
+        <div>
+          <h3 class="footer__title">Меню</h3>
+          <ul class="footer__list">
+            <li><a href="menu.html">Все бургеры</a></li>
+            <li><a href="order.html">Заказ и доставка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hi@burgerlab.ru">hi@burgerlab.ru</a></li>
+            <li>Москва, ул. Грильная, 14</li>
+            <li>Ежедневно 11:00 — 23:00</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Рассылка</h3>
+          <p class="footer__about" style="margin-top:0">Раз в неделю присылаем новый рецепт и промокод.</p>
+          <form class="footer__form" action="#" method="post">
+            <label class="visually-hidden" for="footer-email">Email</label>
+            <input id="footer-email" type="email" name="email" placeholder="you@mail.ru" required>
+            <button type="submit">ОК</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Burger Lab. Все права защищены.</span>
+        <span>Сделано на курсе «Вёрстка и серверное программирование»</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
